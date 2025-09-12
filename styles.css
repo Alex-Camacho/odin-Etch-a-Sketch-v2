@@ -2,13 +2,23 @@ body {
     background-color: grey;
 }
 
+.megacontainer, .grid{
+    padding: 0px;
+    margin: 0px;
+}
+
 .megacontainer {
     width: 400px;
     height: 400px;
     border: solid black 5px;
     display: flex;
+    flex-wrap: wrap;
+
 }
 
 .grid{
-    border: solid black 1px;
+  border: solid black 1px;
+  flex: 0 0 calc(100% / 8); /* 8 columnas */
+  height: calc(100% / 8);   /* 8 filas */
+  box-sizing: border-box;
 }
