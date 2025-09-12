@@ -1,5 +1,9 @@
 body {
-    background-color: grey;
+    background-color: rgb(191, 191, 191);
+}
+
+.title{
+    text-align: center;
 }
 
 .megacontainer, .grid{
