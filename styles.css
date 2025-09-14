@@ -26,3 +26,17 @@ body {
   height: calc(100% / 8);   /* 8 filas */
   box-sizing: border-box;
 }
+
+.grid.grid-8 {
+  flex: 0 0 calc(100% / 8);
+  height: calc(100% / 8);
+}
+
+.grid.grid-16 {
+  flex: 0 0 calc(100% / 16);
+  height: calc(100% / 16);
+}
+
+.sizebutton {
+    margin-top: 10px;
+}
