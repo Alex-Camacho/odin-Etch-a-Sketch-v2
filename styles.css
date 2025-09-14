@@ -1,9 +1,11 @@
 body {
-    background-color: rgb(191, 191, 191);
+    background-color: rgb(196, 217, 255);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .title{
     text-align: center;
+    margin-top: 50px;
 }
 
 .megacontainer, .grid{
@@ -26,6 +28,7 @@ body {
   flex: 0 0 calc(100% / 8); /* 8 columnas */
   height: calc(100% / 8);   /* 8 filas */
   box-sizing: border-box;
+  background-color: white;
 }
 
 .grid.grid-8 {

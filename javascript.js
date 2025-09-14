@@ -82,3 +82,13 @@ redbutton.addEventListener("click", ()=>{
         }
     });
 })
+
+//Borrar celdas con botón Clear
+
+const clearbutton = document.querySelector("#clearbutton");
+clearbutton.addEventListener("click", ()=>{
+    const cells = document.querySelectorAll(".grid");
+    cells.forEach(cell =>{
+        cell.style.backgroundColor = "white";
+    })
+})
