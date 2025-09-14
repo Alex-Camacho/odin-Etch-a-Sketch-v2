@@ -37,6 +37,15 @@ body {
   height: calc(100% / 16);
 }
 
-.sizebutton {
+
+
+
+.buttoncontainer{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.buttoncontainer button {
     margin-top: 10px;
 }
