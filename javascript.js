@@ -16,6 +16,15 @@ megacontainer.addEventListener("mouseover", (e) => {
   }
 });
 
+//Función de color random
+
+function randomColor() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
 
 //Señalando button 16x16, borra cells y crea el número correcto
 
@@ -51,3 +60,25 @@ button8.addEventListener("click", () =>{
 }
 })
 
+//Señalar button Rainbow y generar colores random
+const rainbowbutton = document.querySelector("#rainbowbutton");
+
+rainbowbutton.addEventListener("click", ()=>{
+    megacontainer.addEventListener("mouseover", (e) => {
+        if (e.target.classList.contains("grid")) {
+            e.target.style.backgroundColor = randomColor();
+        }
+    });
+})
+
+
+//Señalar button Rojo y generar color rojo
+const redbutton = document.querySelector("#redbutton");
+
+redbutton.addEventListener("click", ()=>{
+    megacontainer.addEventListener("mouseover", (e) => {
+        if (e.target.classList.contains("grid")) {
+            e.target.style.backgroundColor = "red";
+        }
+    });
+})

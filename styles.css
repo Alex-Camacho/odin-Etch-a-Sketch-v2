@@ -17,6 +17,7 @@ body {
     border: solid black 5px;
     display: flex;
     flex-wrap: wrap;
+    justify-self: center;
 
 }
 
@@ -44,8 +45,16 @@ body {
     display: flex;
     width: 400px;
     justify-content: space-between;
+    justify-self: center;
 }
 
 .buttoncontainer button {
     margin-top: 10px;
+}
+
+.clearbutton {
+    width: 400px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
 }
